@@ -24,8 +24,8 @@ print('Multiplying complex number: ', (1+1j) * (1-1j))
 
 # Declaring the variable at the top first
 
-a = 3  # a is a variable name and 3 is an integer data type
-b = 2  # b is a variable name and 3 is an integer data type
+a = 78  # a is a variable name and 3 is an integer data type
+b = 34  # b is a variable name and 3 is an integer data type
 
 # Arithmetic operations and assigning the result to a variable
 total = a + b
@@ -47,8 +47,8 @@ print('a // b = ', floor_division)
 print('a ** b = ', exponential)
 
 # Declaring values and organizing them together
-num_one = 3
-num_two = 4
+num_one = 100
+num_two = 210
 
 # Arithmetic operations
 total = num_one + num_two
@@ -66,7 +66,7 @@ print('remainder: ', remainder)
 
 
 # Calculating area of a circle
-radius = 10                                 # radius of a circle
+radius = 20                              # radius of a circle
 # two * sign means exponent or power
 area_of_circle = 3.14 * radius ** 2
 print('Area of a circle:', area_of_circle)
@@ -83,17 +83,17 @@ gravity = 9.81
 weight = mass * gravity
 print(weight, 'N')
 
-print(3 > 2)     # True, because 3 is greater than 2
+print(3 > 4)     # False, because 4 is greater than 3)
 print(3 >= 2)    # True, because 3 is greater than 2
-print(3 < 2)     # False,  because 3 is greater than 2
-print(2 < 3)     # True, because 2 is less than 3
+print(3 < 10)     # True,  because 10 is greater than 3
+print(2 < 3 )  # True, because 2 is less than 3
 print(2 <= 3)    # True, because 2 is less than 3
 print(3 == 2)    # False, because 3 is not equal to 2
 print(3 != 2)    # True, because 3 is not equal to 2
+print(len('mango') == len('apple'))  # True
 print(len('mango') == len('avocado'))  # False
-print(len('mango') != len('avocado'))  # True
 print(len('mango') < len('avocado'))   # True
-print(len('milk') != len('meat'))      # False
+print(len('milk') != len('cucumber'))      # True
 print(len('milk') == len('meat'))      # True
 print(len('tomato') == len('potato'))  # True
 print(len('python') > len('dragon'))   # False
