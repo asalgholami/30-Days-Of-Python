@@ -1,18 +1,16 @@
 
 # Single line comment
-letter = 'P'                # A string could be a single character or a bunch of texts
+letter = 'F'                # A string could be a single character or a bunch of texts
 print(letter)               # P
 print(len(letter))          # 1
-greeting = 'Hello, World!'  # String could be  a single or double quote,"Hello, World!"
+greeting = 'Hello, Asal'  # String could be  a single or double quote,"Hello, World!"
 print(greeting)             # Hello, World!
 print(len(greeting))        # 13
-sentence = "I hope you are enjoying 30 days of python challenge"
-print(sentence)
+Se = ("nice to meet you ")
+print(Se)
 
 # Multiline String
-multiline_string = '''I am a teacher and enjoy teaching.
-I didn't find anything as rewarding as empowering people.
-That is why I created 30 days of python.'''
+multiline_string = '''I am a student and i am learning python'''
 print(multiline_string)
 # Another way of doing the same thing
 multiline_string = """I am a teacher and enjoy teaching.
@@ -21,34 +19,35 @@ That is why I created 30 days of python."""
 print(multiline_string)
 
 # String Concatenation
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Asal'
+last_name = 'Gholami'
 space = ' '
 full_name = first_name + space + last_name
-print(full_name)  # Asabeneh Yetayeh
+print(full_name)
 # Checking length of a string using len() builtin function
-print(len(first_name))  # 8
-print(len(last_name))   # 7
-print(len(first_name) > len(last_name))  # True
-print(len(full_name))  # 15
+print(len(first_name))
+print(len(last_name))
+print(len(first_name) > len(last_name))
+print(len(full_name))
 
 # Unpacking characters
-language = 'Python'
-a, b, c, d, e, f = language  # unpacking sequence characters into variables
+language = 'nazanin'
+a, b, c, d, e, f , g = language  # unpacking sequence characters into variables
 print(a)  # P
 print(b)  # y
 print(c)  # t
 print(d)  # h
 print(e)  # o
-print(f)  # n
+print(f) # n
+print(g)
 
 # Accessing characters in strings by index
-language = 'Python'
+language = 'Bodylanguage'
 first_letter = language[0]
 print(first_letter)  # P
-second_letter = language[1]
+second_letter = language[5]
 print(second_letter)  # y
-last_index = len(language) - 1
+last_index = len(language) - 2
 last_letter = language[last_index]
 print(last_letter)  # n
 
@@ -61,9 +60,10 @@ print(second_last)  # o
 
 # Slicing
 
-language = 'Python'
+language = 'Bodylanguage'
 # starts at zero index and up to 3 but not include 3
 first_three = language[0:3]
+print(first_three)
 last_three = language[3:6]
 print(last_three)  # hon
 # Another way
@@ -73,65 +73,58 @@ last_three = language[3:]
 print(last_three)   # hon
 
 # Skipping character while splitting Python strings
-language = 'Python'
-pto = language[0:6:2]
-print(pto)  # pto
+language = 'Bodylanguage'
+A = language[1:6:2]
+print(A)
 
 # Escape sequence
-print('I hope every one enjoying the python challenge.\nDo you ?')  # line break
-print('Days\tTopics\tExercises')
-print('Day 1\t3\t5')
-print('Day 2\t3\t5')
-print('Day 3\t3\t5')
-print('Day 4\t3\t5')
-print('This is a back slash  symbol (\\)')  # To write a back slash
-print('In every programming language it starts with \"Hello, World!\"')
+print('How old are you?.\n45?')
+print('Time\tDays\tminuts')
+print('Time1\t1\t12')
+print('Time2\t7\t30')
+print('In every programming language it start \"it is difficult!\"')
 
 # String Methods
 # capitalize(): Converts the first character the string to Capital Letter
 
-challenge = 'thirty days of python'
-print(challenge.capitalize())  # 'Thirty days of python'
+l_n='piece of cake'
+print(l_n.capitalize())
 
 # count(): returns occurrences of substring in string, count(substring, start=.., end=..)
 
-challenge = 'thirty days of python'
-print(challenge.count('y'))  # 3
-print(challenge.count('y', 7, 14))  # 1
-print(challenge.count('th'))  # 2`
+l_n='piece of cake'
+print(l_n.count('e'))
+print(l_n.count('c'))
 
 # endswith(): Checks if a string ends with a specified ending
 
-challenge = 'thirty days of python'
-print(challenge.endswith('on'))   # True
-print(challenge.endswith('tion'))  # False
+challenge = 'piece  of cake'
+print(challenge.endswith('e'))   #True
+print(challenge.endswith('ke'))  #True
 
 # expandtabs(): Replaces tab character with spaces, default tab size is 8. It takes tab size argument
-
-challenge = 'thirty\tdays\tof\tpython'
-print(challenge.expandtabs())   # 'thirty  days    of      python'
-print(challenge.expandtabs(10))  # 'thirty    days      of        python'
+l_n='Girl\tAli\tschool'
+print(l_n.expandtabs())
+print(l_n.expandtabs(20))
 
 # find(): Returns the index of first occurrence of substring
-
-challenge = 'thirty days of python'
-print(challenge.find('y'))  # 5
-print(challenge.find('th'))  # 0
+P1='piece of cake'
+print(P1.find('i'))
+print(P1.find('a'))
+print(P1.find('k'))
 
 # format()	formats string into nicer output
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-job = 'teacher'
-country = 'Finland'
-sentence = 'I am {} {}. I am a {}. I live in {}.'.format(
-    first_name, last_name, job, country)
-print(sentence)  # I am Asabeneh Yetayeh. I am a teacher. I live in Finland.
+f='Asal'
+l='Gholami'
+j='student'
+s='I am {} {}. I am a {}.' .format(f,l,j)
+print(s)
 
-radius = 10
-pi = 3.14
-area = pi  # radius ## 2
-result = 'The area of circle with {} is {}'.format(str(radius), str(area))
-print(result)  # The area of circle with 10 is 314.0
+radius=15
+pi=3.14
+a=pi
+R='The area of circle with {} is {}'.format(str(radius),str(a))
+print(R)
 
 # index(): Returns the index of substring
 challenge = 'thirty days of python'
@@ -156,14 +149,17 @@ print(challenge.isalnum())  # False
 
 challenge = 'thirty days of python'
 print(challenge.isalpha())  # True
-num = '123'
+num = '110'
 print(num.isalpha())      # False
 
 # isdecimal(): Checks Decimal Characters
+A='Asal gholami'
+print(A.isdecimal())
+A='453'
+print(A.isdecimal())
+A='6 9'
+print(A.isdecimal())
 
-challenge = 'thirty days of python'
-print(challenge.find('y'))  # 5
-print(challenge.find('th'))  # 0
 
 # isdigit(): Checks Digit Characters
 
