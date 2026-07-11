@@ -1,18 +1,19 @@
 # Introduction
 # Day 1 - 30DaysOfPython Challenge
 
-print("Hello World!")   # print hello world
+print("Hello Asal!")   # print hello message
 
-print(2 + 3)   # addition(+)
+print(5 + 10)   # addition(+)
 print(3 - 1)   # subtraction(-)
 print(2 * 3)   # multiplication(*)
 print(3 + 2)   # addition(+)
 print(3 - 2)   # subtraction(-)
 print(3 * 2)   # multiplication(*)
 print(3 / 2)   # division(/)
-print(3 ** 2)  # exponential(**)
+print(10 ** 2)  # exponential(**)
 print(3 % 2)   # modulus(%)
 print(3 // 2)  # Floor division operator(//)
+print()
 
 # Checking data types
 
@@ -23,3 +24,4 @@ print(type('Asabeneh'))          # String
 print(type([1, 2, 3]))           # List
 print(type({'name': 'Asabeneh'}))  # Dictionary
 print(type({9.8, 3.14, 2.7}))    # Tuple
+print('I am learning python')
